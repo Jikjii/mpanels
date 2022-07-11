@@ -7,6 +7,10 @@ type Edge {
   node: Panel
 }
 
+type Mutation {
+  createPanel(category: String!, description: String!, imageUrl: String!, title: String!, url: String!): Panel!
+}
+
 type PageInfo {
   endCursor: String
   hasNextPage: Boolean
